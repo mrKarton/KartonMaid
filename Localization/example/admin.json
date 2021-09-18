@@ -1,0 +1,6 @@
+{
+    "setPrefix":{"success":"success_text", "syntaxError":"error_spaces", "about":"command_about"},
+    "langList":{"title":"Title", "about":"command_about"},
+    "setLang":{"success":"success_text", "error":"error_spaces", "about":"command_about"},
+    "about":{"description":"text"}
+}

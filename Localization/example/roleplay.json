@@ -1,0 +1,96 @@
+{
+    "kiss":{
+        "phrase": [
+            "kissed", "started kissing in an embrace"
+        ],
+        "title": [
+            "UwU", "OH MY GOD!!", "This is so cute!", "Ooooo clear"
+        ]
+    },
+    "hit":{
+        "phrase": [
+            "hit",
+            "beat",
+            "gave a punch up",
+            "slapped"
+        ],
+        "title": [
+            "Fuck it",
+            "Oh no!",
+            "I hope now he understands",
+            "It serves him right",
+            "Spare him!"
+        ]
+    },
+    "kill":{
+        "phrase": [
+            "killed", "struck 28 stabs", "pricked him with a corona virus syringe", "threw an anvil on my head", "made me watch noob in minecraft"
+        ],
+        "title": [
+            "PAM PAM", 
+            "WOW",
+            "He hid in the shadow of the night",
+            "the police arrived too late",
+            "Unexpected and hard"
+        ]
+    },
+    "hug":{
+        "phrase": [
+            "hugged", "took to his home", "picked up"
+        ],
+        "title": [
+            "UwU", 
+            "OH MY GOD!!",
+            "It's too cute to be true",
+            "You are a very beautiful couple"
+        ]
+    },
+    "ban":{
+        "phrase":[
+            "ordered a ban"  
+        ],
+        "title":[
+            "BAN fuck!!!",
+            "Fair ban"
+        ]
+    },
+    "fuck":{
+        "gif":[
+            "https://media1.tenor.com/images/b1613fda51b951fe42453bf90f89b209/tenor.gif?itemid=13082428",
+            "https://media1.tenor.com/images/3ae3d07295ce0d4d1e8ef2d5a643f775/tenor.gif?itemid=15366260",
+            "https://media.tenor.com/images/97b2f62c1bd4c7cb53a0628e42c038ce/tenor.gif",
+            "https://media.tenor.com/images/0221783d39e31b04bd9dadd74201dc37/tenor.gif",
+            "https://media.tenor.com/images/1c007c6c7e584905cd3546c8c39d833d/tenor.gif"
+        ],
+        "phrase":[
+            "fucked in the ass",
+            "Coerced into brutal violence"
+        ],
+        "title":[
+            "It was a hot night",
+            "I'll come next night too"
+        ]
+    },
+    "gift":{
+        "phrase":[
+            "gave a gift and wished all the best",
+            "came up, hugged and gave the gift in hand"
+        ],
+        "title":[
+            "So glad",
+            "Oh, you're a good man"
+        ]
+    },
+    "pat":{
+        "phrase":[
+            "QwQ"
+        ],
+        "title":[
+            "pats"
+        ]
+    },
+
+    "withWords":"with_words",
+    "about":{"description":"text"}
+
+}

@@ -1,0 +1,13 @@
+{
+    "help":{
+        "title":"title",
+        "description":"Description",
+        "fieldTitles":["servers_count", "channel_count", "user_count", "started_at"],
+        "about":"command_about",
+        "additionalFields":[{"name":"Additional Title", "value":"Additional Description"}]
+    },
+    "module":{"notFoundError":"error_text", "notTranslatedError":"error_text", "title":"title", "commandListTitle":"command_list_title"},
+    "commands":{"title":"title", "description":"Description"},
+    "version":{"title":"title", "description":"Description", "additionalFields":[{"name":"Additional Title", "value":"Additional Description"}]},
+    "about":{"description":"text"}
+}
