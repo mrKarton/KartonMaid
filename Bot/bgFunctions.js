@@ -82,3 +82,31 @@ module.exports.getStrValuesAfter = (it, arrr) => {
 module.exports.getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+module.exports.getID = (snake) => {
+    if(snake[0] == '<' && snake[snake.length - 1] == '>')
+    {
+        var numbers = ['1', '2', '3', '4', '5', '6','7', '8', '9', '0'];
+
+        var startFrom = 2;
+        if(snake[2] == '!' || snake[2] == '&')
+        {
+            startFrom = 3;
+        }
+        var step1 = "";
+        for(var i = startFrom; i < snake.length; i++)
+        {
+            step1 += snake[i];
+        }
+        var step2 = "";
+        for(var i = 0; i < step1.length - 1; i ++)
+        {
+            step2 += step1[i];
+        }
+        return step2;
+    }
+    else
+    {
+        return snake;
+    }
+}

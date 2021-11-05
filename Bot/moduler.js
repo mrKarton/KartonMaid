@@ -9,11 +9,11 @@ var localization = require('../Localization/index');
 
 module.exports.getCommand = async (name) => {
     return new Promise(resolve => {
-        fs.readdir('./Bot/modules', (err, files)=>{
+        fs.readdir('./Bot/Modules', (err, files)=>{
             if (err) throw err;
 
             files.forEach(file => {
-                var module = require(`./modules/${file}`);
+                var module = require(`./Modules/${file}`);
                 module.commands.forEach(command => {
                     // console.log(command);
                     command.locales.forEach(locale => {
@@ -34,11 +34,11 @@ module.exports.getCommand = async (name) => {
 
 module.exports.aboutCommand = async (name, lang) => {
     return new Promise(resolve => {
-        fs.readdir('./Bot/modules', (err, files)=>{
+        fs.readdir('./Bot/Modules', (err, files)=>{
             if (err) throw err;
 
             files.forEach(file => {
-                var module = require(`./modules/${file}`);
+                var module = require(`./Modules/${file}`);
                 module.commands.forEach(command => {
                     // console.log(command);
                     command.locales.forEach(locale => {
@@ -68,12 +68,12 @@ module.exports.aboutCommand = async (name, lang) => {
 }
 
 module.exports.moduleCommands = async (module) => {
-    return require(`./modules/${module}`).commands;
+    return require(`./Modules/${module}`).commands;
 }
 
 module.exports.modules = async () => {
     return new Promise(async resolve => {
-        var files = await fs.readdirSync('./Bot/modules');
+        var files = await fs.readdirSync('./Bot/Modules');
         var moduleList = new Array();
         files.forEach(file => {
             if(!file.startsWith('$'))

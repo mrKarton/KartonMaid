@@ -1,0 +1,28 @@
+{
+    "about":{"description":"text"},
+
+    "setup":{
+        "syntaxError":"syntax_error", "dataError":"data_error", "existsError":"error_already_exists",
+        "publicChannel":{"head":"head", "body":"body"}, 
+        "adminChannel":{"head":"head", "body":"body"},
+
+        "about":"command_about"
+    },
+    "disable":{
+        "existsError":"error_already_disabled",
+        "head":"head", "body":"body",
+        "success":"succes_message",
+
+        "about":"command_about"
+    },
+    "report":{
+        "existsError":"error_disabled",
+        "head":"head", "body":"report_text",
+        "moreAttachments":"more_attachments",
+        "about":"command_about"
+    },
+    "decision":{
+        "by":"decision_by",
+        "attachments": "case_attachments"
+    }
+}

@@ -46,7 +46,7 @@ module.exports = async (bot) => {
 
                             if(canUse)
                             {
-                                command.out(message, bot, args.splice(1,1));
+                                command.out(message, bot, args.slice(1, args.length));
                             }
                             else{
                                 message.react('❌')

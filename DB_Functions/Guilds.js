@@ -50,3 +50,8 @@ module.exports.getPermissionsForCommand = async (name, server) => {
     }
     return permissions.roles;
 } 
+
+module.exports.getAll = async () => {
+    return await guilds.find();
+    
+}
