@@ -9,10 +9,14 @@ module.exports = async (bot) => {
     guilds.CheckAndFill(bot);
     require('./Listeners/messageCreate')(bot);
     require('./Listeners/integrations')(bot);
+    require('./Listeners/newGuild')(bot);
 
     setInterval(async ()=>{
         (await guilds.getAll()).forEach(guild => {
-            require('./Ticks/interactionCleaner')(guild); // require all Tick functions manually
+             // require all Tick functions manually
+
         })
-    }, 1000);
+        require('./Ticks/interactionCleaner')(bot);     //non-guild functions
+        require('./Ticks/statusChanger')(bot);
+    }, 1000 * 5 * 60);
 }

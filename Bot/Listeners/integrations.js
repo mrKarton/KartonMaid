@@ -10,7 +10,7 @@ var idb = require('../../DB_Functions/Interactions');
 module.exports = async (bot) => {
     bot.on('interactionCreate', async interaction => {
         
-        
+        // console.log(interaction);
         var data = await idb.get(interaction.customId);
         if(data != -1)
         {

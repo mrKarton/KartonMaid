@@ -110,3 +110,13 @@ module.exports.getID = (snake) => {
         return snake;
     }
 }
+
+module.exports.dotLsit = (arr, additional) => {
+    var langs = arr;
+    var list = "";
+    langs.forEach(element => {
+        list += `•  ${element} ${additional}`
+    });
+    
+    return list
+}

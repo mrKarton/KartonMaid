@@ -1,16 +1,46 @@
 {
-    "help":{
-        "title":"Помощь по Боту",
-        "description":"Привет! Я - ваша Горничная. Я помогу вам для установки справедливости на сервере и развлеку вас",
-        "fieldTitles":["Кол-во серверов", "Кол-во каналов", "Кол-во пользователей", "Я была запущена"],
-        "about":"Показывает помощь по боту",
-        "additionalFields":[{"name":"Связь с разработчиком: ", "value":"**[VK](https://vk.com/mrKarton) • [GitHub](https://github.com/mrKarton) • [Website](http://mrkarton.ru)**"},
-            {"name":"Помощь разработчику:", "value":"[DonationAlerts](https://www.donationalerts.com/r/kartonks) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"}]
-    },
-    "module":{"notFoundError":"Модуль не найден", "notTranslatedError":"Описание модуля недостпно или не переведено", "title":"Модуль", "commandListTitle":"Команды модуля: "},
-    "commands":{"title":"Команлы", "description":"Список доступных команд бота:", "about":"Показывает список доступных команд"},
-    "version":{"title":"Информация об актуальной версии", "description":"Бля, я хз, чё написать !!!НЕ ЗАБЫТЬ ПРИДУМАТЬ НА РЕЛИЗЕ!!!", 
-    "additionalFields":[{"name":"Помощь разработчику:", "value":"[DonationAlerts](https://www.donationalerts.com/r/kartonks) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"}]},
-
-    "about":{"description":"В этом модуле собраны команды, помогающие вас разобраться в том, как работает Бот"}
+	"help": {
+		"title": "Помощь по Боту",
+		"description": "Привет! Я - ваша Горничная. Я помогу вам для установки справедливости на сервере и развлеку вас",
+		"fieldTitles": [
+			"Кол-во серверов",
+			"Кол-во каналов",
+			"Кол-во пользователей",
+			"Я была запущена"
+		],
+		"about": "Показывает помощь по боту",
+		"additionalFields": [
+			{
+				"name": "Связь с разработчиком: ",
+				"value": "**[VK](https://vk.com/mrKarton) • [GitHub](https://github.com/mrKarton) • [Website](http://mrkarton.ru)**"
+			},
+			{
+				"name": "Помощь разработчику:",
+				"value": "[DonationAlerts](https://www.donationalerts.com/r/kartonks) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"
+			}
+		]
+	},
+	"module": {
+		"notFoundError": "error_text",
+		"notTranslatedError": "error_text",
+		"title": "title",
+		"commandListTitle": "command_list_title"
+	},
+	"commands": {
+		"title": "title",
+		"description": "Description"
+	},
+	"version": {
+		"title": "title",
+		"description": "Description",
+		"additionalFields": [
+			{
+				"name": "Additional Title",
+				"value": "Additional Description"
+			}
+		]
+	},
+	"about": {
+		"description": "text"
+	}
 }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update-langs":"node updateLocalizations.js",
+    "start": "nodemon index.js --ignore './*.json'"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "node": "16.6.1",
     "request": "^2.88.2",
     "snowflake-generator": "^1.0.2"
+  },
+  "nodemonCongig":{
+    "ignore":["*.json"]
   }
 }
