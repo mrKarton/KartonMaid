@@ -1,0 +1,28 @@
+{
+    "about":{"description":"Setups the report module on the server. More details - not soon"},
+    
+    "setuptickets":{
+    "SyntaxError":"Syntax error", "DataError":"Channel references entered incorrectly", "existserror":"The module is already installed",
+    "publicChannel":{"head":"Public channel", "body":"This channel is set as public for the reports module"},
+    "adminchannel":{"head":"Admin channel", "body":"This channel is set as administrative for the reports module"},
+    
+    "about":"Install the report module on the server. Sitaxis: `#[admin channel]` `#[public channel]`"
+    },
+    "Disabletickets":{
+    "existserror":"Error: module not installed",
+    "head": "Shutdown", "body":"This channel is no longer used by the report module",
+    "success": "Successfully turned off",
+    
+    "about":"Disables the report module"
+    },
+    "ReportUser":{
+    "existserror":"The report module is disabled",
+    "head":"New report", "body":"Text:",
+    "moreattachments":"More details",
+    "about":"Sending a report against a user"
+    },
+    "decision":{
+    "by":"Decision from the administrator",
+    "attachments": "Attachments to the case"
+    }
+}

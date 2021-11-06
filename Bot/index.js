@@ -18,5 +18,5 @@ module.exports = async (bot) => {
         })
         require('./Ticks/interactionCleaner')(bot);     //non-guild functions
         require('./Ticks/statusChanger')(bot);
-    }, 1000 * 5 * 60);
+    }, 1000 * 60 * 5);
 }

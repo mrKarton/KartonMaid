@@ -1,7 +1,7 @@
 {
 	"help": {
 		"title": "Помощь по Боту",
-		"description": "Привет! Я - ваша Горничная. Я помогу вам для установки справедливости на сервере и развлеку вас",
+		"description": "Привет! Я - ваша Горничная. Я помогу вам для установки справедливости на сервере и развлеку вас \n Список доступных команд: !команды",
 		"fieldTitles": [
 			"Кол-во серверов",
 			"Кол-во каналов",
@@ -21,26 +21,30 @@
 		]
 	},
 	"module": {
-		"notFoundError": "error_text",
-		"notTranslatedError": "error_text",
-		"title": "title",
-		"commandListTitle": "command_list_title"
+		"notFoundError": "Модуль не найден",
+		"notTranslatedError": "Модуль не переведён",
+		"title": "Модуль",
+		"commandListTitle": "Команды"
 	},
 	"commands": {
-		"title": "title",
-		"description": "Description"
+		"title": "Команды",
+		"description": "Список команд бота"
 	},
 	"version": {
-		"title": "title",
-		"description": "Description",
+		"title": "Бодробнее о версии бота",
+		"description": "Подробная информация о данной версии бота",
 		"additionalFields": [
 			{
-				"name": "Additional Title",
-				"value": "Additional Description"
+				"name": "Связь с разработчиком: ",
+				"value": "**[VK](https://vk.com/mrKarton) • [GitHub](https://github.com/mrKarton) • [Website](http://mrkarton.ru)**"
+			},
+			{
+				"name": "Помощь разработчику:",
+				"value": "[DonationAlerts](https://www.donationalerts.com/r/kartonks) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"
 			}
 		]
 	},
 	"about": {
-		"description": "text"
+		"description": "Помощь по боту"
 	}
 }

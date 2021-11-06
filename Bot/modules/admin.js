@@ -4,7 +4,7 @@ var discord = require('discord.js');
 var colors = require('../../colors.json');
 
 var setPrefix = async (msg, bot, args) => {
-    console.log(args);
+    // console.log(args);
     var guild = await gdb.get(msg.guild.id);
     lang = langCore.getModule(guild.Language, 'admin');
 

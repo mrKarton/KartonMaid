@@ -15,7 +15,7 @@ var setup = async (msg, bot, args) => {
     {
         if(args.length != 2) 
         {
-            msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setup.syntaxError}`)]});
+            msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setupTickets.syntaxError}`)]});
             return;
         }
 
@@ -24,22 +24,22 @@ var setup = async (msg, bot, args) => {
             var id = bg.getID(args[i]);
             if(id == args[i])
             {
-                msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setup.dataError}`)]});
+                msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setupTickets.dataError}`)]});
                 return;
             }
             args[i] = id;
         }
         msg.react('🔄');
         gdb.set(msg.guild.id, {TicketChannels:args})
-        await (await bot.channels.fetch(args[0])).send({embeds:[new discord.MessageEmbed().setColor(colors.success).setTitle(lang.setup.adminChannel.head).setDescription(lang.setup.adminChannel.body)]})
-        await (await bot.channels.fetch(args[1])).send({embeds:[new discord.MessageEmbed().setColor(colors.success).setTitle(lang.setup.publicChannel.head).setDescription(lang.setup.publicChannel.body)]})
+        await (await bot.channels.fetch(args[0])).send({embeds:[new discord.MessageEmbed().setColor(colors.success).setTitle(lang.setupTickets.adminChannel.head).setDescription(lang.setupTickets.adminChannel.body)]})
+        await (await bot.channels.fetch(args[1])).send({embeds:[new discord.MessageEmbed().setColor(colors.success).setTitle(lang.setupTickets.publicChannel.head).setDescription(lang.setupTickets.publicChannel.body)]})
         msg.reactions.removeAll();
         msg.react('✅');
  
     }
-    else
+    else 
     {
-        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setup.existsError}`)]})
+        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.setupTickets.existsError}`)]})
     }
 }
 
@@ -49,16 +49,16 @@ var disable = async (msg, bot, args) => {
 
     if(guild.TicketChannels.length != 0)
     {
-        (await bot.channels.fetch(guild.TicketChannels[0])).send({embeds:[new discord.MessageEmbed().setColor(colors.info).setDescription(lang.disable.body).setTitle(lang.disable.head)]});
-        (await bot.channels.fetch(guild.TicketChannels[1])).send({embeds:[new discord.MessageEmbed().setColor(colors.info).setDescription(lang.disable.body).setTitle(lang.disable.head)]});
+        (await bot.channels.fetch(guild.TicketChannels[0])).send({embeds:[new discord.MessageEmbed().setColor(colors.info).setDescription(lang.disableTickets.body).setTitle(lang.disableTickets.head)]});
+        (await bot.channels.fetch(guild.TicketChannels[1])).send({embeds:[new discord.MessageEmbed().setColor(colors.info).setDescription(lang.disableTickets.body).setTitle(lang.disableTickets.head)]});
 
         gdb.set(msg.guild.id, {TicketChannels:[]})
 
-        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.success).setDescription(`✅ ${lang.disable.success}`)]});
+        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.success).setDescription(`✅ ${lang.disableTickets.success}`)]});
     }
     else
     {
-        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.disable.existsError}`)]});
+        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.disableTickets.existsError}`)]});
     }
 
 }
@@ -69,7 +69,7 @@ var report = async (msg, bot, args) => {
 
     if(guild.TicketChannels.length == 0)
     {
-        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.report.existsError}`)]});
+        msg.channel.send({embeds:[new discord.MessageEmbed().setColor(colors.error).setDescription(`❌ ${lang.reportUser.existsError}`)]});
         return;
     }
     // if(typeof guild.ReportCount == 'undefined')
@@ -83,7 +83,7 @@ var report = async (msg, bot, args) => {
     // }
     
     var publicMessage = await (await bot.channels.fetch(guild.TicketChannels[1])).send({embeds:[new discord.MessageEmbed()
-        .setColor(colors.info).setTitle(`${lang.report.head}`).setFooter(msg.author.username, msg.author.avatarURL())
+        .setColor(colors.info).setTitle(`${lang.reportUser.head}`).setFooter(msg.author.username, msg.author.avatarURL())
         .setDescription(bg.getStrValuesAfter(0, args))]})
     
     var thread = await publicMessage.startThread({
@@ -124,7 +124,7 @@ var report = async (msg, bot, args) => {
     var buttonRow = new MessageActionRow().addComponents(acceptButton).addComponents(denclineButton);
 
     (await bot.channels.fetch(guild.TicketChannels[0])).send({embeds:[new discord.MessageEmbed()
-        .setColor(colors.info).setTitle(`${lang.report.head}`).setFooter(msg.author.username, msg.author.avatarURL())
+        .setColor(colors.info).setTitle(`${lang.reportUser.head}`).setFooter(msg.author.username, msg.author.avatarURL())
         .setDescription(bg.getStrValuesAfter(0, args))], components:[buttonRow], files:attachments})
 
     

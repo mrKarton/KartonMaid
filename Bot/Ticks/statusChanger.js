@@ -1,11 +1,13 @@
 var bg = require('../bgFunctions');
 var version = require('../../version.json')
 var langCore = require('../../Localization/index');
+var config = require('../../DB_Functions/Config');
+
 // const { AnonymousGuild } = require('discord.js');
 
 module.exports = async (bot) => {
     var statusVariants = [
-        `Hentai used ${version.hentaiUsedTimes} times`,
+        `Hentai used ${await config.get('Hentai used')} times`,
         `v.${version.version}!`,
         `v.${version.version} - ${version.title}`,
         `Started as ${version['Run As']}`,

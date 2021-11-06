@@ -1,0 +1,33 @@
+{
+    "help":{
+        "title":"Bot Help",
+        "description":"Hi! I'm your Maid. I will help you to install justice on the server and entertain you \n List of available commands: !commands",
+        "fieldTitles":["servers_count", "channel_count", "user_count", "started_at"],
+        "about":"Bot Help",
+        "additionalFields":[
+            {
+                "name": "Developer contacts: ",
+                "value": "**[VK](https://vk.com/mrKarton ) • [GitHub](https://github.com/mrKarton) • [Website](http://mrkarton.ru )**"
+            },
+            {
+                "name": "Developer assistance:",
+                "value": "[DonationAlerts](https://www.donationalerts.com/r/kartonka ) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"
+            }
+        ]
+    },
+    "module":{"notFoundError":"Module not found", "notTranslatedError":"Module not translated", "title":"Module", "commandListTitle":"Module commands"},
+    "commands":{"title":"Commands", "description":"Commands list"},
+    "version":{"title":"Learn more about the bot version", "description":"Detailed information about this version of the bot", 
+        "additionalFields":[
+            {
+                "name": "Developer contacts: ",
+                "value": "**[VK](https://vk.com/mrKarton ) • [GitHub](https://github.com/mrKarton) • [Website](http://mrkarton.ru )**"
+            },
+            {
+                "name": "Developer assistance:",
+                "value": "[DonationAlerts](https://www.donationalerts.com/r/kartonka ) • [GitHub Contibuting](https://github.com/mrKarton/KartonMaid)"
+            }
+        ]},
+
+    "about":{"description":"bot help"}
+}

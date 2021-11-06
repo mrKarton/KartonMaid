@@ -1,21 +1,21 @@
 {
     "about":{"description":"text"},
 
-    "setup":{
+    "setupTickets":{
         "syntaxError":"syntax_error", "dataError":"data_error", "existsError":"error_already_exists",
         "publicChannel":{"head":"head", "body":"body"}, 
         "adminChannel":{"head":"head", "body":"body"},
 
         "about":"command_about"
     },
-    "disable":{
+    "disableTickets":{
         "existsError":"error_already_disabled",
         "head":"head", "body":"body",
         "success":"succes_message",
 
         "about":"command_about"
     },
-    "report":{
+    "reportUser":{
         "existsError":"error_disabled",
         "head":"head", "body":"report_text",
         "moreAttachments":"more_attachments",
@@ -25,4 +25,4 @@
         "by":"decision_by",
         "attachments": "case_attachments"
     }
-}
+} 

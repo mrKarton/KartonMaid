@@ -3,6 +3,7 @@ var gdb = require('../../DB_Functions/Guilds');
 var idb = require('../../DB_Functions/Interactions');
 var discord = require('discord.js');
 var colors = require('../../colors.json');
+var config = require('../../DB_Functions/Config');
 const request = require('request');
 var {MessageActionRow, MessageButton} = require('discord.js');
 var fs = require('fs');
@@ -32,6 +33,10 @@ var hentai = async (msg, bot, args) => {
 
         // console.log(version); 
         fs.writeFileSync('./version.json', JSON.stringify(version, null, '\t'));
+
+        var counter = await config.get("Hentai used");
+        console.log(counter);
+        config.setValue("Hentai used", counter + 1);
     })
 }
 

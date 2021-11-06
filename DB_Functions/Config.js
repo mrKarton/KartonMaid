@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+const { Objects } = require('../Helps');
 mongoose.connect('mongodb://localhost:27017/Maid');
 
 var config = mongoose.model('configs', require('./Schemas/config'));
@@ -35,3 +36,10 @@ module.exports.get = async (key) => {
         })
     })
 }
+
+module.exports.setValue = async (key, value) => {
+    var data = await config.findOne({Key:key});
+    var newObj = Objects(data._doc, {Value:value});
+    data.overwrite(newObj);
+    data.save(); 
+} 
