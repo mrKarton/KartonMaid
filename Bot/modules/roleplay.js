@@ -68,10 +68,10 @@ async function RP(bot, msg, args, type)
             .setTitle(dat.title[funcs.getRandomInt(0, dat.title.length)])
             .setDescription("<@" + msg.author.id + "> " + dat.phrase[funcs.getRandomInt(0, dat.phrase.length)] + " " +
             msg.content.split(" ")[1]).setImage(gifURL);
-            console.log(args);
+            // console.log(args);
             if(args.length > 1)
             {
-                var wWords = "Со словами"
+                var wWords = lang.withWords;
                 embed.addField(wWords, funcs.getStrValuesAfter(1, args) );
             }
 

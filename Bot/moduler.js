@@ -54,7 +54,7 @@ module.exports.aboutCommand = async (name, lang) => {
                                 }
                                 else
                                 {
-                                    console.log(language[command.name].about)
+                                    // console.log(language[command.name].about)
                                     resolve(language[command.name].about);
 
                                 }

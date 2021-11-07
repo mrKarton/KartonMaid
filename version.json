@@ -1,7 +1,6 @@
 {
 	"Run As": "Beta",
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"title": "Tickets'n Hentai",
-	"changelog": "Interaction Listener \n Better Language mechanics \n Ticket Module \n Fun module",
-	"hentaiUsedTimes": 9
+	"changelog": " Interaction Listener \n Better Language mechanics \n Ticket Module \n Fun module \n Fixed Bugs \n \n First release version"
 }
