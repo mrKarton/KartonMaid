@@ -11,6 +11,8 @@ module.exports = async (bot) => {
         `v.${version.version}!`,
         `v.${version.version} - ${version.title}`,
         `Started as ${version['Run As']}`,
+        'See another projects: mrkarton.ru!',
+        'Vote us Top.gg',
         'Your personal maid!',
         `My languages: ${ bg.dotLsit(await langCore.getLangsList(), "")}`
     ]

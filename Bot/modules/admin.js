@@ -2,6 +2,7 @@ var langCore = require('../../Localization/index');
 var gdb = require('../../DB_Functions/Guilds');
 var discord = require('discord.js');
 var colors = require('../../colors.json');
+var bg = require('../bgFunctions');
 
 var setPrefix = async (msg, bot, args) => {
     // console.log(args);
@@ -54,8 +55,16 @@ var setLang = async (msg, bot, args) => {
     }
 }
 
+var reportBug = async (msg, bot, args) => {
+    (await bot.users.fetch('471976309598322700')).send({embeds:[new discord.MessageEmbed().setAuthor(msg.author.username, msg.author.avatarURL())
+        .setDescription(bg.getStrValuesAfter(0, args)).setTitle("Новое сообщение о баге").setColor(colors.error)]});
+
+    msg.react('✅');
+}
+
 module.exports.commands = [
     {name: "setPrefix", locales:[["префикс"],["prefix"]], out:setPrefix, defaultPermissions:["ADMINISTRATOR"]},
     {name: "langList", locales:[["языки"], ["languages", "langs"]], out:getLangs, defaultPermissions:[]},
-    {name: "setLang", locales:[["язык"], ["language", "lang"]], out:setLang, defaultPermissions:["ADMINISTRATOR"]}
+    {name: "setLang", locales:[["язык"], ["language", "lang"]], out:setLang, defaultPermissions:["ADMINISTRATOR"]},
+    {name: "reportBug", locales:[["баг"], ["bug", "bugreport"]], out:reportBug, defaultPermissions:["ADMINISTRATOR"]}
 ]

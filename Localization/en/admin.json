@@ -1,6 +1,22 @@
 {
-    "setPrefix":{"success":"Prefix successfully updated", "syntaxError":"The prefix must not contain spaces", "about":"Updates the bot prefix"},
-    "langList":{"title":"List of languages", "about":"List of all available languages"},
-    "setLang":{"success":"The language has been successfully updated", "error":"Language not found", "about":"Sets the language of the bot"},
-    "about":{"description":"Bot Settings"}
+	"setPrefix": {
+		"success": "Prefix successfully updated",
+		"syntaxError": "The prefix must not contain spaces",
+		"about": "Updates the bot prefix"
+	},
+	"langList": {
+		"title": "List of languages",
+		"about": "List of all available languages"
+	},
+	"setLang": {
+		"success": "The language has been successfully updated",
+		"error": "Language not found",
+		"about": "Sets the language of the bot"
+	},
+	"about": {
+		"description": "Bot Settings"
+	},
+	"reportBug": {
+		"about": "report a bug"
+	}
 }

@@ -41,5 +41,5 @@ var hentai = async (msg, bot, args) => {
 }
 
 module.exports.commands = [
-    {name: "getHentai", locales:[["хентай", "хент"],["hentai"]], out:hentai, defaultPermissions:["ADMINISTRATOR"]},
+    {name: "getHentai", locales:[["хентай", "хент"],["hentai"]], out:hentai, defaultPermissions:[]},
 ]
