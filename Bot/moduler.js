@@ -43,11 +43,11 @@ module.exports.aboutCommand = async (name, lang) => {
                     // console.log(command);
                     command.locales.forEach(locale => {
                         locale.forEach(async comm => {
-                            // console.log(comm, name, comm == name);
+                            // console.log(name, comm, comm == name);
                             if(comm == name)
                             {
                                 var language = await localization.getModule(lang, file.split('.')[0]);
-
+                                // console.log('here', name, comm, language, command.name, file)
                                 if(typeof language[command.name].about == 'undefined')
                                 {
                                     resolve("The description of this command does not exist or has not been translated into your language");

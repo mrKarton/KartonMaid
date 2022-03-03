@@ -131,7 +131,7 @@ var report = async (msg, bot, args) => {
 }
 
 module.exports.commands = [
-    {name: "setupTickets", locales:[["жалобы.вкл", "жб.вкл", "ж.в", "жв"],["tisckets.setup", "t.s", "ts"]], out:setup, defaultPermissions:["ADMINISTRATOR"]},
-    {name: "disableTickets", locales:[["жалобы.выкл", "жб.выкл", "ж.вы", "жвы"],["tisckets.disable", "t.d", "td"]], out:disable, defaultPermissions:["ADMINISTRATOR"]},
+    {name: "setupTickets", locales:[["жалобы.вкл", "жб.вкл", "ж.в", "жв"],["tisckets | setup", "t.s", "ts"]], out:setup, defaultPermissions:["ADMINISTRATOR"]},
+    {name: "disableTickets", locales:[["жалобы.выкл", "жб.выкл", "ж.вы", "жвы"],["tisckets setup | disable", "t.d", "td"]], out:disable, defaultPermissions:["ADMINISTRATOR"]},
     {name: "reportUser", locales:[["репорт", "жб"],["report"]], out:report, defaultPermissions:[]},
 ]

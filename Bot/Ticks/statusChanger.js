@@ -7,14 +7,16 @@ var config = require('../../DB_Functions/Config');
 
 module.exports = async (bot) => {
     var statusVariants = [
-        `Hentai used ${await config.get('Hentai used')} times`,
-        `v.${version.version}!`,
-        `v.${version.version} - ${version.title}`,
-        `Started as ${version['Run As']}`,
-        'See another projects: mrkarton.ru!',
-        'Vote us Top.gg',
-        'Your personal maid!',
-        `My languages: ${ bg.dotLsit(await langCore.getLangsList(), "")}`
+        // `Hentai used ${await config.get('Hentai used')} times`,
+        // `v.${version.version}!`,
+        // `v.${version.version} - ${version.title}`,
+        // `Started as ${version['Run As']}`,
+        // 'See another projects: mrkarton.ru!',
+        // 'Vote us Top.gg',
+        // 'Your personal maid!',
+        // `My languages: ${ bg.dotLsit(await langCore.getLangsList(), "")}`
+        // 'Setting up all systems. Get Ready soon',
+        'Starting up. Checkout mrkarton.ru/Maid'
     ]
 
     var statusTypes = [

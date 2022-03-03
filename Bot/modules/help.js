@@ -20,7 +20,7 @@ var help = async (msg, bot, args) => {
     // .addField(lang.help.fieldTitles[2], stats.guilds.users, true)
 
     embed.addFields(lang.help.additionalFields);
-    msg.channel.send({embeds:[embed]});
+    return {embeds:[embed]};
     
 }
 
@@ -53,7 +53,7 @@ var moduleAbout = async (msg, bot, args) => {
         commandsList += `• \`${command.locales[1][0]}\` - ${typeof aboutModule[command.name].about == 'undefined' ? "Not Translated" : aboutModule[command.name].about} \n`;
     })
     embed.addField(lang.commandListTitle, commandsList);
-    msg.channel.send({embeds:[embed]});
+    return({embeds:[embed]});
 }
 
 var commandList = async (msg, bot, args) => {
@@ -76,7 +76,7 @@ var commandList = async (msg, bot, args) => {
     })
 
     embed.setFooter('mrKarton • 2021 • mrkarton.ru', (await bot.users.fetch('471976309598322700')).avatarURL());
-    msg.channel.send({embeds:[embed]});
+    return({embeds:[embed]});
 
 }
 
@@ -91,7 +91,7 @@ var getVersion = async (msg, bot, args) => {
     embed.addField(`${version.version} - ${version.title}`, version.changelog);
     embed.addFields(lang.additionalFields);
 
-    msg.channel.send({embeds:[embed]});
+    return ({embeds:[embed]});
 }
 
 module.exports.commands = [
